@@ -1,5 +1,5 @@
 services:
-  postgre:
+  postgres:
     container_name: postgres
     image: postgres:latest
     volumes:
