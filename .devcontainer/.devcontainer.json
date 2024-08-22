@@ -1,11 +1,14 @@
 {
-  "name": "PostgreSQL Dev Container Playground",
-  "dockerComposeFile": "docker-compose.yml",
-  "service": "postgres",
-  "forwardPorts": [5432],
-  "extension": [
-    "dbaeumer.vscode-eslint"
-  ]
-  "postCreateCommand": "psql -U ${POSTGRES_USER} -c 'SELECT 1;'"
-}
+    "name": "PostgreSQL Dev Container Playground",
+    "dockerComposeFile": "docker-compose.yml",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "service": "postgres",
+    "forwardPorts": [5432],
+    "customizations": {
+      "vscode": {
+          "extensions": ["streetsidesoftware.code-spell-checker"]
+      }
+    },
+    "postCreateCommand": "psql -U ${POSTGRES_USER} -c 'SELECT 1;'"
+  }
 
