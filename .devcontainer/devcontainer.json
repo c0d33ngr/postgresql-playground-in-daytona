@@ -8,8 +8,6 @@
       "vscode": {
           "extensions": ["streetsidesoftware.code-spell-checker"]
       }
-    },
-    "postCreateCommand": "psql -U ${POSTGRES_USER} -c 'SELECT 1;'",
-    "postStartCommand": "psql -U ${POSTGRES_USER}"
+    }
   }
 
