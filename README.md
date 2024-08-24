@@ -1,7 +1,7 @@
-## **README**
+## **PostgresSQL Playground in Daytona**
 
 ### **Introduction**
-This repository provides a Devcontainer configuration for setting up a ready-to-use development environment for your project in Daytona. Devcontainers allow you to define a reproducible development environment that can be easily shared and reused across different machines.
+This repository provides a Devcontainer configuration for setting up a ready-to-use PostgreSQL development environment to use for learning or building database using Daytona. Devcontainers allow you to define a reproducible development environment that can be easily shared and reused across different machines.
 
 Daytona is a self-hosted and open source development environment manager platform that simpifies the development environment for software engineers, database administrators, etc.
 
