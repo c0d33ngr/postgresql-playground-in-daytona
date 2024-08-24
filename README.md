@@ -1,7 +1,7 @@
 ## **PostgresSQL Playground in Daytona**
 
 ### **Introduction**
-This repository provides a Devcontainer configuration for setting up a ready-to-use PostgreSQL development environment to use for learning or building database using Daytona. Devcontainers allow you to define a reproducible development environment that can be easily shared and reused across different machines.
+This repository provides a Devcontainer configuration for setting up a ready-to-use PostgreSQL development environment workspace to use for learning or building database using Daytona. Workspace created with `daytona` allows you to define a reproducible development environment that can be easily shared and reused across different machines.
 
 Daytona is a self-hosted and open source development environment manager platform that simpifies the development environment for software engineers, database administrators, etc.
 
@@ -9,20 +9,20 @@ Daytona is a self-hosted and open source development environment manager platfor
 To use this Devcontainer, you'll need:
 
 - **An IDE:** Like Visual Studio Code (VS Code) or JetBrains. Ensure you have the latest version installed.
-- **Daytona:** An amazing open source software development management platform.
+- **Daytona:** An amazing open source software development management platform. More info [here]
 - **Docker:** A container technology. Download link [here]
 
 ### **Getting Started**
-1. **Paste the code below in your terminal to setup the devcontainer for PostgreSQL playground using `daytona`**
+1. **Paste the code below in your terminal to setup the workspace for PostgreSQL playground using `daytona`**
    ```bash
    daytona create https://github.com/c0d33ngr/postgresql-playground-in-daytona.git
    ```
-2. **Paste the code below in your terminal to open the devcontainer in your preferred IDE you choose during `daytona` installation**
+2. **Paste the code below in your terminal to open the workspace in your preferred IDE you choose during `daytona` installation**
    ```bash
    daytona code postgresql-playground-in-daytona
    ```
 
-### **Devcontainer Configuration**
+### **Daytona Workspace Configuration**
 The `devcontainer.json` file in this repository defines the specific environment configuration. It includes details such as:
 
   - **`name`:** Set the name of the development container environment to ``PostgreSQL Dev Container Playground``.
@@ -37,7 +37,7 @@ The `devcontainer.json` file in this repository defines the specific environment
       - `psql -U ${POSTGRES_USER} -c 'SELECT 1;'`: Connects to the PostgreSQL database using the environment variable `POSTGRES_USER` and executes a simple query to verify the database connection.
 
 ### **Customization**
-You can customize the Devcontainer configuration to suit your specific needs. Refer to the official Devcontainers documentation for more details on available options: [here](https://containers.dev/implementors/json_reference/)
+You can customize the configuration to suit your specific needs. Refer to the official Devcontainers documentation for more details on available options: [here](https://containers.dev/implementors/json_reference/)
 
 **Note:** If you encounter any issues or have questions, feel free to open an issue.
 
