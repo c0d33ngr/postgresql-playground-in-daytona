@@ -28,10 +28,16 @@ To use this Devcontainer, you'll need:
 ### **Devcontainer Configuration**
 The `devcontainer.json` file in this repository defines the specific environment configuration. It includes details such as:
 
-* **Base image:** The Docker image used as the foundation of the container.
-* **Extensions:** VS Code extensions that will be installed automatically.
-* **PostCreateCommand:** Commands that will be executed after the container is created.
-* **Features:** Additional features or settings that can be configured.
+  - **`name`:** Set the name of the development container environment to ``PostgreSQL Dev Container Playground``.
+  - **`dockerComposeFile`:** Specifies the Docker Compose file (`docker-compose.yml`) that defines the services and their configurations.
+  - **`workspaceFolder`:** Determine the location of the workspace folder within the container, using the base name of the local workspace folder.
+  - **`service`:** Indicate that the development container will primarily interact with the ``postgres`` service defined in the Docker Compose file.
+  - **`forwardPorts`:** Forwards the container's port ``5432`` to the host machine, allowing local access to the PostgreSQL database.
+  - **`customizations`:** Defines additional customizations for the development environment:
+      - **`vscode`:** Specifies customizations for Visual Studio Code:
+          - **`extensions`:** Installs the ``streetsidesoftware.code-spell-checker`` extension to enable spell checking within the code editor.
+  - **`postCreateCommand`:** Executes the specified command after the development container is created:
+      - `psql -U ${POSTGRES_USER} -c 'SELECT 1;'`: Connects to the PostgreSQL database using the environment variable `POSTGRES_USER` and executes a simple query to verify the database connection.
 
 ### **Customization**
 You can customize the Devcontainer configuration to suit your specific needs. Refer to the official Devcontainers documentation for more details on available options: [here](https://containers.dev/implementors/json_reference/)
