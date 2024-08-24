@@ -13,11 +13,11 @@ To use this Devcontainer, you'll need:
 - **Docker:** A container technology. Download link [here]
 
 ### **Getting Started**
-1. **Setup the devcontainer using `daytona`:**
+1. **Paste the code below in your terminal to setup the devcontainer for PostgreSQL playground using `daytona`**
    ```bash
    daytona create https://github.com/c0d33ngr/postgresql-playground-in-daytona.git
    ```
-2. **Open the devcontainer in your preferred IDE you choose during `daytona` installation**
+2. **Paste the code below in your terminal to open the devcontainer in your preferred IDE you choose during `daytona` installation**
    ```bash
    daytona code postgresql-playground-in-daytona
    ```
