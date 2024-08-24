@@ -8,21 +8,18 @@ Daytona is a self-hosted and open source development environment manager platfor
 ### **Prerequisites**
 To use this Devcontainer, you'll need:
 
-* **An IDE:** Like Visual Studio Code (VS Code) or JetBrains. Ensure you have the latest version installed.
-* **Daytona:** An amazing open source software development management platform.
+- **An IDE:** Like Visual Studio Code (VS Code) or JetBrains. Ensure you have the latest version installed.
+- **Daytona:** An amazing open source software development management platform.
+- **Docker:** A container technology. Download link [here]
 
 ### **Getting Started**
-1. **Clone the Repository:**
+1. **Setup the devcontainer using `daytona`:**
    ```bash
-   git clone https://github.com/c0d33ngr/postgresql-playground-in-daytona.git
+   daytona create https://github.com/c0d33ngr/postgresql-playground-in-daytona.git
    ```
-2. **Move into the cloned repository**
+2. **Open the devcontainer in your preferred IDE you choose during `daytona` installation**
    ```bash
-   cd postgresql-playground-in-daytona
-   ```
-3. **Run Daytona server**
-   ```bash
-   daytona server
+   daytona code postgresql-playground-in-daytona
    ```
 
 ### **Devcontainer Configuration**
