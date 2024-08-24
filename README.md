@@ -8,9 +8,7 @@ Daytona is a self-hosted and open source development environment manager platfor
 ### **Prerequisites**
 To use this Devcontainer, you'll need:
 
-* **Visual Studio Code (VS Code):** Ensure you have the latest version installed.
-* **DevContainer:** A VS Code extension that is required for working with Devcontainers. You cna install from VS Code Marketplace for Extensions.
-* **Remote Development Extension:** This extension is required for working with Devcontainers. You can install it from the VS Code Marketplace.
+* **An IDE:** Like Visual Studio Code (VS Code) or JetBrains. Ensure you have the latest version installed.
 * **Daytona:** An amazing open source software development management platform.
 
 ### **Getting Started**
@@ -38,7 +36,7 @@ The `devcontainer.json` file in this repository defines the specific environment
 ### **Customization**
 You can customize the Devcontainer configuration to suit your specific needs. Refer to the official Devcontainers documentation for more details on available options: [here](https://containers.dev/implementors/json_reference/)
 
-**Note:** If you encounter any issues or have questions, feel free to open and issue.
+**Note:** If you encounter any issues or have questions, feel free to open an issue.
 
 ### **Contribution**
 Feel free to open an issue or submit a PR for any changes, bug or features you worth adding.
