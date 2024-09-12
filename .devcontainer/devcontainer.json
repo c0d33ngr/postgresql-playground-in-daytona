@@ -1,7 +1,7 @@
 {
+    "name": "PostgreSQL Playground",
     "features": {
       "ghcr.io/itsmechlark/features/postgresql:1.5.0": {}
-    }
-  
-  }
-  
+    },
+    "postCreateCommand": "sudo bash .devcontainer/setup-postgres.sh"  
+}
