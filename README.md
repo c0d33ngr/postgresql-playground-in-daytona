@@ -9,8 +9,8 @@ Daytona is a self-hosted and open source development environment manager platfor
 To use this Devcontainer, you'll need:
 
 - **An IDE:** Like Visual Studio Code (VS Code) or JetBrains. Ensure you have the latest version installed.
-- **Daytona:** An amazing open source software development management platform. More info [here]
-- **Docker:** A container technology. Download link [here]
+- **Daytona:** An amazing open source software development management platform. More info [here](https://www.daytona.io/)
+- **Docker:** A container technology. Download link [here](https://docs.docker.com/get-started/get-docker/)
 
 ### **Getting Started**
 1. **Paste the code below in your terminal to setup the workspace for PostgreSQL playground using `daytona`**
@@ -26,15 +26,10 @@ To use this Devcontainer, you'll need:
 The `devcontainer.json` file in this repository defines the specific environment configuration. It includes details such as:
 
   - **`name`:** Set the name of the development container environment to ``PostgreSQL Dev Container Playground``.
-  - **`dockerComposeFile`:** Specifies the Docker Compose file (`docker-compose.yml`) that defines the services and their configurations.
-  - **`workspaceFolder`:** Determine the location of the workspace folder within the container, using the base name of the local workspace folder.
-  - **`service`:** Indicate that the development container will primarily interact with the ``postgres`` service defined in the Docker Compose file.
-  - **`forwardPorts`:** Forwards the container's port ``5432`` to the host machine, allowing local access to the PostgreSQL database.
-  - **`customizations`:** Defines additional customizations for the development environment:
-      - **`vscode`:** Specifies customizations for Visual Studio Code:
-          - **`extensions`:** Installs the ``streetsidesoftware.code-spell-checker`` extension to enable spell checking within the code editor.
-  - **`postCreateCommand`:** Executes the specified command after the development container is created:
-      - `psql -U ${POSTGRES_USER} -c 'SELECT 1;'`: Connects to the PostgreSQL database using the environment variable `POSTGRES_USER` and executes a simple query to verify the database connection.
+  - **`features`:** This configuration adds PostgreSQL setup in the environment.
+  - **`postCreateCommand`:** This is use for running a bash command as superuser to edit a PostgreSQL config file. When the command runs the shell acript successfully, password would not be required to login to `psql`.
+
+The `setup-postgres.sh` file contain bash commands to edit `pg_hba.conf` to allow user `postgres` to login to `psql` without password.
 
 ### **Customization**
 You can customize the configuration to suit your specific needs. Refer to the official Devcontainers documentation for more details on available options: [here](https://containers.dev/implementors/json_reference/)
