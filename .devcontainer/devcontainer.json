@@ -1,9 +1,8 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "name": "PostgreSQL Playground",
   "features": {
     "ghcr.io/itsmechlark/features/postgresql:1": {
-        "username": "postgres",
-        "password": "postgres"
+      "version": "latest"
     }
   }
 }
