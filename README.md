@@ -27,14 +27,14 @@ The `devcontainer.json` file in this repository defines the specific environment
 
   - **`name`:** Set the name of the development container environment to ``PostgreSQL Dev Container Playground``.
   - **`features`:** This configuration adds PostgreSQL setup in the environment.
-  - **`postCreateCommand`:** This is use for running a bash command as superuser to edit a PostgreSQL config file. When the command runs the shell acript successfully, password would not be required to login to `psql`.
+  - **`postCreateCommand`:** This is use for running a bash command as superuser to edit a PostgreSQL config file. When the command runs the script `setup-postgres.sh` successfully, password would not be required to login to `psql`.
 
-The `setup-postgres.sh` file contain bash commands to edit `pg_hba.conf` to allow user `postgres` to login to `psql` without password.
+The `setup-postgres.sh` file contain bash commands to edit `pg_hba.conf` which allow user `postgres` to login to `psql` without password.
 
 ### **Customization**
 You can customize the configuration to suit your specific needs. Refer to the official Devcontainers documentation for more details on available options: [here](https://containers.dev/implementors/json_reference/)
 
-**Note:** If you encounter any issues or have questions, feel free to open an issue.
+**Note:** If you encounter any problems or have questions, don't hesitate to open an issue.
 
 ### **Contribution**
-Feel free to open an issue or submit a PR for any changes, bug or features you worth adding.
+You can make meaningful contributions to the repo as it's welcome. Feel free to open an issue or submit a PR for any changes, bug or features you think it's worth adding.
