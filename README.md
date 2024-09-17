@@ -26,10 +26,8 @@ To use this Devcontainer, you'll need:
 The `devcontainer.json` file in this repository defines the specific environment configuration. It includes details such as:
 
   - **`name`:** Set the name of the development container environment to ``PostgreSQL Dev Container Playground``.
+  - **`image`:** This uses a base Ubuntu image from Microsoft image repository.
   - **`features`:** This configuration adds PostgreSQL setup in the environment.
-  - **`postCreateCommand`:** This is use for running a bash command as superuser to edit a PostgreSQL config file. When the command runs the script `setup-postgres.sh` successfully, password would not be required to login to `psql`.
-
-The `setup-postgres.sh` file contain bash commands to edit `pg_hba.conf` which allow user `postgres` to login to `psql` without password.
 
 ### **Customization**
 You can customize the configuration to suit your specific needs. Refer to the official Devcontainers documentation for more details on available options: [here](https://containers.dev/implementors/json_reference/)
