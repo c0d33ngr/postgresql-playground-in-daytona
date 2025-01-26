@@ -15,11 +15,11 @@ To use this Devcontainer, you'll need:
 ### **Getting Started**
 1. **Paste the code below in your terminal to setup the workspace for PostgreSQL playground using `daytona`**
    ```bash
-   daytona create https://github.com/c0d33ngr/postgresql-playground-in-daytona.git
+   daytona create https://github.com/c0d33ngr/playground-postgresql
    ```
 2. **Paste the code below in your terminal to open the workspace in your preferred IDE you choose during `daytona` installation**
    ```bash
-   daytona code postgresql-playground-in-daytona
+   daytona code playground-postgresql
    ```
 
 ### **Daytona Workspace Configuration**
